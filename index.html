@@ -1,81 +1,34 @@
-<section>
-<h2>اختبار القبول</h2>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Respect Elite</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<form id="quiz">
+<nav>
+<a href="index.html">الرئيسية</a>
+<a href="rules.html">القوانين</a>
+<a href="quiz.html">اختبار القبول</a>
+<a href="team.html">الإدارة</a>
+</nav>
 
-<p>1- ما معنى RDM ؟</p>
-<input type="radio" name="q1" value="1"> القتل بدون سبب<br>
-<input type="radio" name="q1" value="0"> سرقة سيارة<br>
+<header class="hero">
+<h1>RESPECT ELITE</h1>
+<p>حيث يبدأ الرول بلاي الحقيقي</p>
 
-<p>2- ما معنى VDM ؟</p>
-<input type="radio" name="q2" value="1"> استخدام المركبة كسلاح<br>
-<input type="radio" name="q2" value="0"> بيع المركبات<br>
+<a class="btn" href="quiz.html">ابدأ الاختبار</a>
 
-<p>3- ما معنى Meta Gaming ؟</p>
-<input type="radio" name="q3" value="1"> استخدام معلومات خارج اللعبة داخل الرول بلاي<br>
-<input type="radio" name="q3" value="0"> تجارة الأسلحة<br>
-
-<p>4- ما معنى Power Gaming ؟</p>
-<input type="radio" name="q4" value="1"> فرض أفعال غير واقعية<br>
-<input type="radio" name="q4" value="0"> شراء السيارات<br>
-
-<p>5- إذا ماتت شخصيتك ماذا تفعل ؟</p>
-<input type="radio" name="q5" value="1"> تنسى أحداث السيناريو الأخير<br>
-<input type="radio" name="q5" value="0"> ترجع تنتقم مباشرة<br><br>
-
-<button type="button" onclick="checkQuiz()">إرسال الاختبار</button>
-
-</form>
-
-<h3 id="result"></h3>
-
-<script>
-function checkQuiz() {
-let score = 0;
-
-for(let i = 1; i <= 5; i++) {
-let answer = document.querySelector('input[name="q'+i+'"]:checked');
-if(answer && answer.value == "1") score++;
-}
-
-if(score >= 4){
-document.getElementById("result").innerHTML =
-"✅ مبروك لقد نجحت في الاختبار";
-}else{
-document.getElementById("result").innerHTML =
-"❌ للأسف لم تنجح، حاول مرة أخرى";
-}
-}
-</script>
-
-</section>
-
-<section>
-<h2>فريق الإدارة</h2>
-
-<p><b>Founder:</b> مهدي بلاقنيزي</p>
-<p><b>Owner:</b> رايد الحربي</p>
-
-<p><b>الإدارة:</b></p>
-<ul>
-<li>MK</li>
-<li>3od</li>
-<li>أبو ناصر</li>
-<li>L7N</li>
-</ul>
-
-<p><b>الرقابة:</b></p>
-<ul>
-<li>جلوك</li>
-</ul>
-
-</section>
-
-<section>
-<h2>الديسكورد</h2>
-
-<a href="https://discord.gg/aQwVMcPvz5" target="_blank">
-انضم إلى الديسكورد
+<a class="btn" href="https://discord.gg/aQwVMcPvz5">
+الديسكورد
 </a>
+</header>
 
-</section>
+<footer>
+Owner: رايد الحربي
+</footer>
+
+</body>
+</html>
